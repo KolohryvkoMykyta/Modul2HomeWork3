@@ -14,7 +14,7 @@ namespace Modul2HomeWork3
             while (true)
             {
                 string sweetName = Console.ReadLine();
-                Sweet foundSweet = SweetSearcher.SearchByName(sweetName, gift.Sweets);
+                Sweet foundSweet = gift.SearchByName(sweetName);
 
                 if (foundSweet != null)
                 {

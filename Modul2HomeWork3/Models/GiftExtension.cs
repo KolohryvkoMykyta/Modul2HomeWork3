@@ -1,14 +1,14 @@
-﻿using Modul2HomeWork3.Models;
+﻿using System.Runtime.CompilerServices;
 
-namespace Modul2HomeWork3
+namespace Modul2HomeWork3.Models
 {
-    public static class SweetSearcher
+    public static class GiftExtension
     {
-        public static Sweet SearchByName(string name, Sweet[] array)
+        public static Sweet SearchByName(this Gift gift, string name)
         {
             Sweet? result = null;
 
-            foreach (var item in array)
+            foreach (var item in gift.Sweets)
             {
                 if (item.Name == name)
                 {
